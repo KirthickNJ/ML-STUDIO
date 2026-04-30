@@ -1,0 +1,500 @@
+{
+  "model_id": "5a4d76d3-ed18-4d8c-abf0-98ff3702e3a6",
+  "name": "random_forest_regressor::2026-03-08T14:13:54.412135+00:00",
+  "created_at": "2026-03-08T14:13:54.412135+00:00",
+  "algorithm": "random_forest_regressor",
+  "problem_type": "regression",
+  "target_column": "Years of Experience",
+  "feature_columns": [
+    "Age",
+    "Gender",
+    "Education Level",
+    "Job Title",
+    "Salary"
+  ],
+  "feature_schema": {
+    "Age": "numeric",
+    "Salary": "numeric",
+    "Gender": "categorical",
+    "Education Level": "categorical",
+    "Job Title": "categorical"
+  },
+  "numeric_features": [
+    "Age",
+    "Salary"
+  ],
+  "categorical_features": [
+    "Gender",
+    "Education Level",
+    "Job Title"
+  ],
+  "metrics": {
+    "validation": {
+      "mse": 1.1506356881209374,
+      "rmse": 1.0726768796431372,
+      "mae": 0.7091498412698413,
+      "r2_score": 0.9741630426927833
+    },
+    "test": {
+      "mse": 1.2434683660710508,
+      "rmse": 1.1151091274270204,
+      "mae": 0.7997837460317463,
+      "r2_score": 0.9724105862455465
+    },
+    "cv": {
+      "score_mean": 0.9712087411163604,
+      "score_std": 0.002993615612128911
+    }
+  },
+  "split": {
+    "train": 0.6,
+    "validation": 0.2,
+    "test": 0.2,
+    "seed": 42,
+    "train_rows": 223,
+    "validation_rows": 75,
+    "test_rows": 75
+  },
+  "train_params": {
+    "algorithm": "random_forest_regressor",
+    "target_column": "Years of Experience",
+    "objective": "balanced",
+    "seed": 42
+  },
+  "objective": "balanced",
+  "dataset_hash": "378eda43d8025f4a2e51388d589f30677161125a0693dda0012a61267eefd26b",
+  "dataset_profile": {
+    "rows": 375,
+    "columns": 6,
+    "numeric": {
+      "Age": {
+        "mean": 37.43163538873995,
+        "std": 7.069072938567494,
+        "p50": 36.0
+      },
+      "Years of Experience": {
+        "mean": 10.03083109919571,
+        "std": 6.557007136414237,
+        "p50": 9.0
+      },
+      "Salary": {
+        "mean": 100577.34584450402,
+        "std": 48240.013481882655,
+        "p50": 95000.0
+      }
+    },
+    "categorical_top_values": {
+      "Gender": {
+        "Male": 0.5173333333333333,
+        "Female": 0.47733333333333333,
+        "nan": 0.005333333333333333
+      },
+      "Education Level": {
+        "Bachelor's": 0.5973333333333334,
+        "Master's": 0.2613333333333333,
+        "PhD": 0.136,
+        "nan": 0.005333333333333333
+      },
+      "Job Title": {
+        "Director of Marketing": 0.032,
+        "Director of Operations": 0.029333333333333333,
+        "Senior Business Analyst": 0.02666666666666667,
+        "Senior Marketing Manager": 0.024,
+        "Senior Marketing Analyst": 0.024
+      }
+    }
+  },
+  "diagnostics": {
+    "kind": "regression",
+    "residual_summary": {
+      "mean": 0.1067061587301586,
+      "std": 1.1099919647277205,
+      "mae": 0.7997837460317461,
+      "p95_abs": 2.5306742857142863
+    },
+    "residual_points": [
+      {
+        "actual": 21.0,
+        "predicted": 19.992,
+        "residual": 1.0079999999999991
+      },
+      {
+        "actual": 10.0,
+        "predicted": 11.388,
+        "residual": -1.388
+      },
+      {
+        "actual": 16.0,
+        "predicted": 14.710561904761908,
+        "residual": 1.2894380952380917
+      },
+      {
+        "actual": 6.0,
+        "predicted": 5.676,
+        "residual": 0.32399999999999984
+      },
+      {
+        "actual": 17.0,
+        "predicted": 15.644,
+        "residual": 1.3559999999999999
+      },
+      {
+        "actual": 18.0,
+        "predicted": 15.988,
+        "residual": 2.0120000000000005
+      },
+      {
+        "actual": 22.0,
+        "predicted": 21.848,
+        "residual": 0.15200000000000102
+      },
+      {
+        "actual": 10.0,
+        "predicted": 9.528,
+        "residual": 0.47199999999999953
+      },
+      {
+        "actual": 3.0,
+        "predicted": 3.416,
+        "residual": -0.4159999999999999
+      },
+      {
+        "actual": 9.0,
+        "predicted": 9.368,
+        "residual": -0.3680000000000003
+      },
+      {
+        "actual": 13.0,
+        "predicted": 16.792,
+        "residual": -3.7920000000000016
+      },
+      {
+        "actual": 21.0,
+        "predicted": 19.644,
+        "residual": 1.3560000000000016
+      },
+      {
+        "actual": 2.0,
+        "predicted": 1.002,
+        "residual": 0.998
+      },
+      {
+        "actual": 9.0,
+        "predicted": 8.004,
+        "residual": 0.9960000000000004
+      },
+      {
+        "actual": 14.0,
+        "predicted": 16.54624761904762,
+        "residual": -2.5462476190476195
+      },
+      {
+        "actual": 3.0,
+        "predicted": 3.416,
+        "residual": -0.4159999999999999
+      },
+      {
+        "actual": 5.0,
+        "predicted": 5.876,
+        "residual": -0.8760000000000003
+      },
+      {
+        "actual": 1.5,
+        "predicted": 2.186,
+        "residual": -0.6859999999999999
+      },
+      {
+        "actual": 7.0,
+        "predicted": 7.046,
+        "residual": -0.04600000000000026
+      },
+      {
+        "actual": 8.0,
+        "predicted": 8.328,
+        "residual": -0.3279999999999994
+      },
+      {
+        "actual": 10.0,
+        "predicted": 10.428,
+        "residual": -0.4280000000000008
+      },
+      {
+        "actual": 9.0,
+        "predicted": 9.436,
+        "residual": -0.43599999999999994
+      },
+      {
+        "actual": 16.0,
+        "predicted": 16.552,
+        "residual": -0.5519999999999996
+      },
+      {
+        "actual": 5.0,
+        "predicted": 4.992,
+        "residual": 0.008000000000000007
+      },
+      {
+        "actual": 6.0,
+        "predicted": 7.1,
+        "residual": -1.0999999999999996
+      },
+      {
+        "actual": 4.0,
+        "predicted": 3.008,
+        "residual": 0.992
+      },
+      {
+        "actual": 18.0,
+        "predicted": 18.6,
+        "residual": -0.6000000000000014
+      },
+      {
+        "actual": 2.0,
+        "predicted": 1.92,
+        "residual": 0.08000000000000007
+      },
+      {
+        "actual": 13.0,
+        "predicted": 13.196,
+        "residual": -0.19599999999999973
+      },
+      {
+        "actual": 19.0,
+        "predicted": 17.404,
+        "residual": 1.596
+      },
+      {
+        "actual": 3.0,
+        "predicted": 2.588,
+        "residual": 0.4119999999999999
+      },
+      {
+        "actual": 14.0,
+        "predicted": 12.88,
+        "residual": 1.1199999999999992
+      },
+      {
+        "actual": 3.0,
+        "predicted": 3.092,
+        "residual": -0.09200000000000008
+      },
+      {
+        "actual": 15.0,
+        "predicted": 15.02,
+        "residual": -0.019999999999999574
+      },
+      {
+        "actual": 10.0,
+        "predicted": 9.756,
+        "residual": 0.24399999999999977
+      },
+      {
+        "actual": 0.5,
+        "predicted": 0.58,
+        "residual": -0.07999999999999996
+      },
+      {
+        "actual": 21.0,
+        "predicted": 19.763,
+        "residual": 1.2369999999999983
+      },
+      {
+        "actual": 2.0,
+        "predicted": 3.004,
+        "residual": -1.004
+      },
+      {
+        "actual": 18.0,
+        "predicted": 15.136,
+        "residual": 2.8640000000000008
+      },
+      {
+        "actual": 4.0,
+        "predicted": 3.404,
+        "residual": 0.5960000000000001
+      },
+      {
+        "actual": 2.0,
+        "predicted": 2.084,
+        "residual": -0.08400000000000007
+      },
+      {
+        "actual": 9.0,
+        "predicted": 9.344,
+        "residual": -0.3439999999999994
+      },
+      {
+        "actual": 25.0,
+        "predicted": 22.044,
+        "residual": 2.9559999999999995
+      },
+      {
+        "actual": 19.0,
+        "predicted": 19.377333333333333,
+        "residual": -0.37733333333333263
+      },
+      {
+        "actual": 2.0,
+        "predicted": 1.996,
+        "residual": 0.0040000000000000036
+      },
+      {
+        "actual": 16.0,
+        "predicted": 15.0864,
+        "residual": 0.9136000000000006
+      },
+      {
+        "actual": 11.0,
+        "predicted": 9.716,
+        "residual": 1.2840000000000007
+      },
+      {
+        "actual": 2.0,
+        "predicted": 2.244,
+        "residual": -0.24400000000000022
+      },
+      {
+        "actual": 2.0,
+        "predicted": 3.0,
+        "residual": -1.0
+      },
+      {
+        "actual": 2.0,
+        "predicted": 1.922,
+        "residual": 0.07800000000000007
+      },
+      {
+        "actual": 19.0,
+        "predicted": 16.92,
+        "residual": 2.0799999999999983
+      },
+      {
+        "actual": 8.0,
+        "predicted": 7.162666666666666,
+        "residual": 0.8373333333333344
+      },
+      {
+        "actual": 13.0,
+        "predicted": 13.730828571428578,
+        "residual": -0.730828571428578
+      },
+      {
+        "actual": 12.0,
+        "predicted": 12.148,
+        "residual": -0.1479999999999997
+      },
+      {
+        "actual": 9.0,
+        "predicted": 9.256,
+        "residual": -0.2560000000000002
+      },
+      {
+        "actual": 12.0,
+        "predicted": 12.396,
+        "residual": -0.3960000000000008
+      },
+      {
+        "actual": 25.0,
+        "predicted": 22.476,
+        "residual": 2.524000000000001
+      },
+      {
+        "actual": 7.0,
+        "predicted": 7.58,
+        "residual": -0.5800000000000001
+      },
+      {
+        "actual": 21.0,
+        "predicted": 19.992,
+        "residual": 1.0079999999999991
+      },
+      {
+        "actual": 6.0,
+        "predicted": 6.32,
+        "residual": -0.3200000000000003
+      },
+      {
+        "actual": 12.0,
+        "predicted": 12.84,
+        "residual": -0.8399999999999999
+      },
+      {
+        "actual": 15.0,
+        "predicted": 15.012,
+        "residual": -0.012000000000000455
+      },
+      {
+        "actual": 20.0,
+        "predicted": 20.22,
+        "residual": -0.21999999999999886
+      },
+      {
+        "actual": 5.0,
+        "predicted": 4.384,
+        "residual": 0.6159999999999997
+      },
+      {
+        "actual": 3.0,
+        "predicted": 4.016,
+        "residual": -1.016
+      },
+      {
+        "actual": 2.0,
+        "predicted": 1.996,
+        "residual": 0.0040000000000000036
+      },
+      {
+        "actual": 3.0,
+        "predicted": 2.876,
+        "residual": 0.12400000000000011
+      },
+      {
+        "actual": 10.0,
+        "predicted": 9.756,
+        "residual": 0.24399999999999977
+      },
+      {
+        "actual": 2.0,
+        "predicted": 2.084,
+        "residual": -0.08400000000000007
+      },
+      {
+        "actual": 0.0,
+        "predicted": 0.556,
+        "residual": -0.556
+      },
+      {
+        "actual": 7.0,
+        "predicted": 4.792,
+        "residual": 2.208
+      },
+      {
+        "actual": 11.0,
+        "predicted": 11.924,
+        "residual": -0.9239999999999995
+      },
+      {
+        "actual": 4.0,
+        "predicted": 4.036,
+        "residual": -0.03599999999999959
+      },
+      {
+        "actual": 14.0,
+        "predicted": 15.232,
+        "residual": -1.2319999999999993
+      },
+      {
+        "actual": 8.0,
+        "predicted": 9.22,
+        "residual": -1.2200000000000006
+      }
+    ]
+  },
+  "stage": "development",
+  "approval": {
+    "status": "pending",
+    "updated_at": "2026-03-08T14:13:54.412135+00:00",
+    "approved_by": null,
+    "notes": null
+  }
+}

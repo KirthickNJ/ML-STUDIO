@@ -1,0 +1,49 @@
+{
+  "model_id": "b75e19b9-4bad-4e02-81d4-d0ca936ebb6e",
+  "name": "random_forest_classifier::2026-02-26T15:28:23.646593+00:00",
+  "created_at": "2026-02-26T15:28:23.646593+00:00",
+  "algorithm": "random_forest_classifier",
+  "problem_type": "classification",
+  "target_column": "Bathrooms",
+  "feature_columns": [
+    "Area_sqft",
+    "Bedrooms",
+    "Floors",
+    "Age_of_House",
+    "House_Price"
+  ],
+  "feature_schema": {
+    "Area_sqft": "numeric",
+    "Bedrooms": "numeric",
+    "Floors": "numeric",
+    "Age_of_House": "numeric",
+    "House_Price": "numeric"
+  },
+  "numeric_features": [
+    "Area_sqft",
+    "Bedrooms",
+    "Floors",
+    "Age_of_House",
+    "House_Price"
+  ],
+  "categorical_features": [],
+  "metrics": {
+    "validation": {
+      "accuracy": 0.375,
+      "f1_weighted": 0.3638392857142857
+    },
+    "test": {
+      "accuracy": 0.25,
+      "f1_weighted": 0.2591540404040404
+    },
+    "cv": {
+      "score_mean": 0.21923076923076926,
+      "score_std": 0.07653749516204768
+    }
+  },
+  "split": {
+    "train": 0.6,
+    "validation": 0.2,
+    "test": 0.2
+  }
+}

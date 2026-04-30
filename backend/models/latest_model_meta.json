@@ -1,0 +1,1 @@
+{"feature_columns": ["Area_sqft", "Bedrooms", "Bathrooms", "Floors", "Age_of_House"], "target_column": "House_Price", "problem_type": "regression", "algorithm": "linear_regression"}

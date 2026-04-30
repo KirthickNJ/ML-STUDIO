@@ -1,0 +1,53 @@
+{
+  "model_id": "91c77315-3cf5-4feb-af05-c399521bc060",
+  "name": "linear_regression::2026-03-08T05:56:05.483258+00:00",
+  "created_at": "2026-03-08T05:56:05.483258+00:00",
+  "algorithm": "linear_regression",
+  "problem_type": "regression",
+  "target_column": "House_Price",
+  "feature_columns": [
+    "Area_sqft",
+    "Bedrooms",
+    "Bathrooms",
+    "Floors",
+    "Age_of_House"
+  ],
+  "feature_schema": {
+    "Area_sqft": "numeric",
+    "Bedrooms": "numeric",
+    "Bathrooms": "numeric",
+    "Floors": "numeric",
+    "Age_of_House": "numeric"
+  },
+  "numeric_features": [
+    "Area_sqft",
+    "Bedrooms",
+    "Bathrooms",
+    "Floors",
+    "Age_of_House"
+  ],
+  "categorical_features": [],
+  "metrics": {
+    "validation": {
+      "mse": 169890193.1349487,
+      "rmse": 13034.19322915495,
+      "mae": 11778.39193340894,
+      "r2_score": 0.9763586096825355
+    },
+    "test": {
+      "mse": 197555951.71491066,
+      "rmse": 14055.459854266977,
+      "mae": 12480.748579929794,
+      "r2_score": 0.9777592112429048
+    },
+    "cv": {
+      "score_mean": 0.9831922287368176,
+      "score_std": 0.008057419848960445
+    }
+  },
+  "split": {
+    "train": 0.6,
+    "validation": 0.2,
+    "test": 0.2
+  }
+}

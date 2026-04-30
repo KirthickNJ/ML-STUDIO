@@ -1,0 +1,200 @@
+{
+  "model_id": "86b8d8bc-3c86-4283-bf0b-eb5ddad15388",
+  "name": "rerun::linear_regression::2026-03-08T06:18:48.612742+00:00",
+  "created_at": "2026-03-08T06:18:48.612790+00:00",
+  "algorithm": "linear_regression",
+  "problem_type": "regression",
+  "target_column": "House_Price",
+  "feature_columns": [
+    "Area_sqft",
+    "Bedrooms",
+    "Bathrooms",
+    "Floors",
+    "Age_of_House"
+  ],
+  "feature_schema": {
+    "Area_sqft": "numeric",
+    "Bedrooms": "numeric",
+    "Bathrooms": "numeric",
+    "Floors": "numeric",
+    "Age_of_House": "numeric"
+  },
+  "numeric_features": [
+    "Area_sqft",
+    "Bedrooms",
+    "Bathrooms",
+    "Floors",
+    "Age_of_House"
+  ],
+  "categorical_features": [],
+  "metrics": {
+    "validation": {
+      "mse": 169890193.1349487,
+      "rmse": 13034.19322915495,
+      "mae": 11778.39193340894,
+      "r2_score": 0.9763586096825355
+    },
+    "test": {
+      "mse": 197555951.71491066,
+      "rmse": 14055.459854266977,
+      "mae": 12480.748579929794,
+      "r2_score": 0.9777592112429048
+    },
+    "cv": {
+      "score_mean": 0.9831922287368176,
+      "score_std": 0.008057419848960445
+    }
+  },
+  "split": {
+    "train": 0.6,
+    "validation": 0.2,
+    "test": 0.2,
+    "seed": 42,
+    "train_rows": 48,
+    "validation_rows": 16,
+    "test_rows": 16
+  },
+  "train_params": {
+    "algorithm": "linear_regression",
+    "target_column": "House_Price",
+    "objective": "balanced",
+    "seed": 42
+  },
+  "objective": "balanced",
+  "dataset_hash": "54c7390295bfa0ef7af0d6e9215b2ab86a2ac4b1027e709b87db697a97ec064f",
+  "dataset_profile": {
+    "rows": 80,
+    "columns": 6,
+    "numeric": {
+      "Area_sqft": {
+        "mean": 2079.8875,
+        "std": 857.6566689923704,
+        "p50": 2021.5
+      },
+      "Bedrooms": {
+        "mean": 2.5,
+        "std": 1.1692256444309357,
+        "p50": 3.0
+      },
+      "Bathrooms": {
+        "mean": 1.975,
+        "std": 0.8415627416308696,
+        "p50": 2.0
+      },
+      "Floors": {
+        "mean": 1.525,
+        "std": 0.5025252685881778,
+        "p50": 2.0
+      },
+      "Age_of_House": {
+        "mean": 13.675,
+        "std": 9.123311357538023,
+        "p50": 15.0
+      },
+      "House_Price": {
+        "mean": 269243.7125,
+        "std": 100380.86922055048,
+        "p50": 273179.5
+      }
+    },
+    "categorical_top_values": {}
+  },
+  "diagnostics": {
+    "kind": "regression",
+    "residual_summary": {
+      "mean": 9358.997067354729,
+      "std": 10486.425778507959,
+      "mae": 12480.748579929794,
+      "p95_abs": 24693.299995233858
+    },
+    "residual_points": [
+      {
+        "actual": 358091.0,
+        "predicted": 333514.4058932366,
+        "residual": 24576.594106763427
+      },
+      {
+        "actual": 228052.0,
+        "predicted": 216786.7151467885,
+        "residual": 11265.284853211488
+      },
+      {
+        "actual": 207358.0,
+        "predicted": 202357.57009990496,
+        "residual": 5000.429900095041
+      },
+      {
+        "actual": 346095.0,
+        "predicted": 356672.54186246195,
+        "residual": -10577.541862461949
+      },
+      {
+        "actual": 364650.0,
+        "predicted": 373727.43951989285,
+        "residual": -9077.439519892854
+      },
+      {
+        "actual": 150590.0,
+        "predicted": 136562.97415320086,
+        "residual": 14027.025846799137
+      },
+      {
+        "actual": 338412.0,
+        "predicted": 321322.48637877364,
+        "residual": 17089.51362122636
+      },
+      {
+        "actual": 184489.0,
+        "predicted": 181211.74788667163,
+        "residual": 3277.2521133283735
+      },
+      {
+        "actual": 303703.0,
+        "predicted": 294105.28893525177,
+        "residual": 9597.711064748233
+      },
+      {
+        "actual": 108428.0,
+        "predicted": 96948.20490865601,
+        "residual": 11479.795091343985
+      },
+      {
+        "actual": 396415.0,
+        "predicted": 386667.3186748972,
+        "residual": 9747.681325102807
+      },
+      {
+        "actual": 180593.0,
+        "predicted": 185912.03071824572,
+        "residual": -5319.030718245718
+      },
+      {
+        "actual": 387349.0,
+        "predicted": 364667.43027992523,
+        "residual": 22681.569720074767
+      },
+      {
+        "actual": 141457.0,
+        "predicted": 132263.23416741344,
+        "residual": 9193.765832586563
+      },
+      {
+        "actual": 233004.0,
+        "predicted": 221266.07595764915,
+        "residual": 11737.924042350845
+      },
+      {
+        "actual": 340434.0,
+        "predicted": 315390.58233935485,
+        "residual": 25043.41766064515
+      }
+    ]
+  },
+  "stage": "development",
+  "approval": {
+    "status": "pending",
+    "updated_at": "2026-03-08T06:18:48.612790+00:00",
+    "approved_by": null,
+    "notes": null
+  }
+}
